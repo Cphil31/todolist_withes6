@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+	<!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+	<title>Brunch with ES6</title>
+	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
+	<script src="vendor.js"></script>
+	<script src="app.js"></script>
+	<script>require('initialize');</script>
+</head>
+<body>
+	<div class="ui grid">
+		<div class="four wide column"></div>
+		<div class="eight wide center aligned column"><h2>To do list</h2></div>
+		<div class="four wide column"></div>
+	</div>
+
+	<div class="ui grid">
+		<div class="four wide column"></div>
+		<div class="eight wide center aligned column"><h2>Ajout d'une nouvelle tâche</h2></div>
+		<div class="four wide column"></div>
+	</div>
+
+	<div class="ui grid">
+		<div class="four wide column"></div>
+		<div class="eight wide column">
+
+			<form class="ui form">
+				<div class="field">
+					<!-- <label>First Name</label> -->
+					<input id="recup" type="text" name="tache" placeholder="Nouvelle tâche">
+				</div>
+				
+				
+				<div class="ui grid">
+					<div class="four wide column"></div>
+					<div class="eight wide center aligned column">
+						<button id="ajout" class="ui button" type="submit">Ajout</button>
+						<div id="affiche"></div>
+						
+					</div>
+					<div class="four wide column"></div>
+				</div>
+
+			</form>
+
+		</div>
+		<div class="four wide column"></div>
+	</div>
+
+</body>
+</html>
